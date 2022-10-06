@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "AddNos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AddNos</h2>
+@using (Html.BeginForm())
+{
+    <label>Enter first number: </label>
+    <input type="number" name="i" value="" />
+    <br />
+    <label>Enter second number: </label>
+    <input type="number" name="j" value="" />
+    <br/>
+    <input type="submit" name="AddNos" value="Addition" />
+}
+

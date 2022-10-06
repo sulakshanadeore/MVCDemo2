@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "CustData";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CustData</h2>
+@using (Html.BeginForm())
+{
+<div>
+    @Html.Label("Enter Custid")
+    @Html.TextBox("id")
+    @Html.ValidationMessage("Custid")
+</div>
+
+<div>
+    @Html.Label("Enter customer name")
+    @Html.TextBox("name")
+    @Html.ValidationMessage("Custname")
+</div>
+
+<div>
+    @Html.Label("Enter customer city")
+    @Html.TextBox("city")
+    @Html.ValidationMessage("City",new { })
+</div>
+<div>
+    <input type="submit" name="CustData" value="accept Customer Data" />
+</div>
+
+}
